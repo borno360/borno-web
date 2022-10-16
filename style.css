@@ -1,0 +1,352 @@
+
+*{
+margin:0;
+padding:0;
+
+box-sizing:border-box;
+
+
+}
+
+ 
+
+
+
+body{
+	
+	background-color:aliceblue;
+	
+}
+
+
+
+	
+	#overlayer {
+  width:100%;
+  height:100vh;  
+  position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  z-index: 2;
+  background:#4a4a4a;
+}
+.preloader p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -75px;
+    width: 120px;
+    height: 90px;
+    font-size:450px;
+    text-align: center;
+    color: #fff;
+    font-size: 44px;
+    z-index: 3;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  display-position:center;
+  z-index:3;
+  border: 4px solid #Fff;
+  top: 50%;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+   margin-right:30%;
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+@-webkit-keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+
+
+
+
+
+
+
+
+.nav-item a{
+	color:white;
+	width:120px;
+	border-radius:20px;
+	text-decoration:none;
+	display:inline-block;
+	margin:0 10px;
+	padding:12px 0;
+	border:.5px solid white;
+	position:relative;
+	z-index:1;
+	text-align:center;
+    transition:color 0.5s;
+}
+
+.nav-item a span{
+	width:0;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	background-color:white;
+	z-index:-1;
+	transition:0.5s;
+	text-align:center;
+	
+}
+.nav-item a:hover span{
+	
+	width:100%;
+	border-radius:20px;
+	background-color:#009688;
+}
+
+.nav-item a:hover {
+	
+	color:#009688;
+	
+}
+
+
+
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;background-color:aliceblue;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  border-radius:20x;
+  background-color: green;
+}
+
+.container {
+  border-radius: 20px;
+  background-color: red;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.card-group card{
+	
+	
+	border-radius:20px;
+	margin:20px;
+}
+.footer{
+	margin-bottom:10px;
+	margin:10px;
+	border-radius:20px;
+	
+	background: black;
+  color:black;
+}
+
+
+
+
+
+
+.icons{
+	display:flex;
+	justify-content:left;
+	margin-top:20px;
+	
+	
+}
+.icons a{
+	height:50px;
+	width:70px;
+	background-color:white;
+	display:inline-flex;
+	font-size:40px;
+	justify-content:center;
+	align-items;center;
+	text-decoration:none;
+	margin:10px;
+	background-size:90% 200%;
+	background-position:100% 5%;
+	
+    border-radius:110px;
+	transition:all 0.5s ease-in-out;
+	
+}
+.icons a:nth-child(1){
+	
+	background-image:linear-gradient(white 50%,#3b5998 20%);
+	color:#3b5998;
+}
+.icons a:nth-child(1):hover{
+	color:white;
+	 background-position:100% 100%
+	
+
+}
+
+
+
+.icons a:nth-child(2){
+	
+	background-image:linear-gradient(white 50%,red 20%);
+	color:red;
+}
+.icons a:nth-child(2):hover{
+	color:white;
+	 background-position:100% 100%
+	
+}
+
+
+.icons a:nth-child(3){
+	
+	background-image:linear-gradient(white 50%,green 20%);
+	color:green;
+}
+.icons a:nth-child(3):hover{
+	color:white;
+	 background-position:100% 100%
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
